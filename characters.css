@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+
+.character {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin: 0;
+}
+
+#characters-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+#characters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1fr 0fr;
+    align-items: center;
+    width: 95%;
+    height: 500px;
+    gap: 0rem;
+}
+
+#characters-grid > h2 {
+    grid-column: span 4;
+    margin: 10px;
+    font-weight: normal;
+}
+
+
+.character-container p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.character-container sup {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1110px) {
+    #characters-title {
+        margin-bottom: 0px;
+    }
+    .character {
+        width: 80%;
+        height: 90%;
+    }
+    #characters-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.2fr 1fr 1fr;
+        max-width: 624px;
+        height: auto;
+        gap: 1rem;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    #characters-title {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+    
+    #mario {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #zelda {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #splatoon {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    #kirby {
+        grid-column: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
