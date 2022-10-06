@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+/* general */
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+span {
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    height: 210px;
+}
+
+svg {
+    color: white;
+}
+
+/* red-line section */
+#red-line {
+    text-indent: 50px;
+    background-color: red;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#red-line div {
+    display: flex;
+}
+
+#nintendo-logo {
+    margin-left: 150px !important;
+}
+
+#social-media-icons li {
+    padding-right: 55px;
+}
+
+#nintendo-logo,
+#social-media-icons {
+    margin-left: 900px;
+}
+
+/* info section */
+div.lists {
+    padding-right: 25px;
+}
+
+div.lists h3 {
+    color: black;
+}
+
+#info {
+    padding-top: 20px;
+}
+
+#info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#info ul li {
+
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: red;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+/* it didn't work */
+#privacy {
+    display: block !important;
+}
+
+/* logo */
+#logo {
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+    margin-bottom: 2.5%;
+}
+
+#logo-size {
+    width: 60px;
+}
+
+/* black-line */
+#black-line {
+    background-color: black;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#black-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#black-line ul li,
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#black-line ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* border-bottom-width: 2px;  */
+    /* here doesn't work */
+}
+
+#black-line ul li,
+#black-line p {
+    color: white;
+}
+
+#black-line p {
+    font-size: 12px;
+}
+
+#black-line a {
+    margin: 0;
+    color: white;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
