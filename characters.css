@@ -1,14 +1,10 @@
-body {
-    margin: 0;
-}
-
 p:hover {
     cursor: text;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.character-container a {
+    display: flex;
+    flex-direction: column;
 }
 
 .character {
@@ -17,18 +13,24 @@ a {
     border: 1px solid grey;
     border-radius: 3px;
     margin: 0;
+
+
 }
 
 #characters-container {
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     font-family: sans-serif;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     padding-top: 20px;
+
 }
 
 #characters-grid {
@@ -36,10 +38,10 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.1fr 1fr 0fr;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 80%;
     height: 350px;
-    gap: 1rem;
+    grid-gap: 1rem;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -53,10 +55,16 @@ a {
 
 
 .character-container p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    margin-left: 0px;
-    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+    align-self: flex-start;
+    margin-left: 13px;
+    margin-top: 5px;
+
+    text-justify: distribute;
+
 }
 
 .character-container sup {
@@ -89,7 +97,7 @@ a {
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 945px) {
     #characters-title {
         margin-bottom: 0px;
     }
